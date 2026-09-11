@@ -1,0 +1,771 @@
+/* =========================================
+   TOOLS PAGE
+========================================= */
+
+.tools-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 80px 4% 100px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 8% 12%,
+      rgba(70, 116, 240, 0.13),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 18%,
+      rgba(153, 83, 238, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #f4f8ff 0%,
+      #ffffff 48%,
+      #f5f2ff 100%
+    );
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.tools-hero {
+  max-width: 1000px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.tools-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 19px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(58, 111, 220, 0.10),
+      rgba(143, 71, 225, 0.10)
+    );
+
+  border: 1px solid #dce4f5;
+
+  color: #4b63d8;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.tools-hero h1 {
+  margin: 20px 0 18px;
+
+  color: #111c33;
+
+  font-size: 54px;
+  line-height: 1.12;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.tools-hero p {
+  margin: 0 auto;
+
+  max-width: 850px;
+
+  color: #405675;
+
+  font-size: 19px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CATEGORY FILTERS
+========================================= */
+
+.tools-categories {
+  margin-top: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+.tool-category {
+  min-width: 145px;
+
+  height: 58px;
+
+  padding: 0 25px;
+
+  border: 1px solid #e1e6f0;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  color: #263954;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 15px rgba(40, 65, 105, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tool-category:hover {
+  transform: translateY(-3px);
+
+  color: #356bc5;
+
+  box-shadow:
+    0 10px 22px rgba(40, 65, 105, 0.09);
+}
+
+.tool-category.active {
+  color: #ffffff;
+
+  border-color: transparent;
+
+  background:
+    linear-gradient(
+      135deg,
+      #3975ca,
+      #5c63dc
+    );
+
+  box-shadow:
+    0 10px 22px rgba(57, 117, 202, 0.25);
+}
+
+
+/* =========================================
+   TOOLS GRID
+========================================= */
+
+.tools-grid {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 28px;
+}
+
+
+/* =========================================
+   TOOL CARD
+========================================= */
+
+.tool-card {
+  min-height: 510px;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background:
+    rgba(255, 255, 255, 0.94);
+
+  border: 1px solid #e0e6f0;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 28px rgba(40, 64, 105, 0.07);
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.tool-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -100px;
+  right: -80px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(70, 112, 229, 0.08);
+
+  transition:
+    transform 0.4s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 22px 45px rgba(38, 61, 103, 0.13);
+
+  border-color: #d2dcf0;
+}
+
+.tool-card:hover::before {
+  transform: scale(1.5);
+}
+
+
+/* =========================================
+   CARD COLORS
+========================================= */
+
+.tool-card-1 {
+  border-top: 4px solid #4775df;
+}
+
+.tool-card-2 {
+  border-top: 4px solid #8652e6;
+}
+
+.tool-card-3 {
+  border-top: 4px solid #21a987;
+}
+
+.tool-card-4 {
+  border-top: 4px solid #ec7930;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.tool-card-header {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.tool-icon {
+  width: 64px;
+  height: 64px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #edf3ff,
+      #e3ebff
+    );
+
+  font-size: 31px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(65, 103, 190, 0.05);
+}
+
+.tool-card-2 .tool-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #f0eaff,
+      #e7ddff
+    );
+}
+
+.tool-card-3 .tool-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #e4faf3,
+      #d8f4eb
+    );
+}
+
+.tool-card-4 .tool-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #fff1e3,
+      #ffe6d0
+    );
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.tool-card-title {
+  min-width: 0;
+}
+
+.tool-card-title h2 {
+  margin: 0 0 10px;
+
+  color: #101d36;
+
+  font-size: 28px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.tool-category-tag {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  background: #e8f0ff;
+
+  color: #2e62c4;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.tool-card-2 .tool-category-tag {
+  background: #eee7ff;
+  color: #7146d7;
+}
+
+.tool-card-3 .tool-category-tag {
+  background: #e4f8f2;
+  color: #0c9877;
+}
+
+.tool-card-4 .tool-category-tag {
+  background: #fff0e2;
+  color: #df6e20;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.tool-description {
+  margin: 40px 0 30px;
+
+  color: #294466;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.tool-features {
+  position: relative;
+  z-index: 2;
+}
+
+.tool-features h3 {
+  margin: 0 0 15px;
+
+  color: #14223b;
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+.tool-features ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.tool-features li {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 11px;
+
+  color: #536b8b;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+.tool-features li span {
+  color: #10b981;
+
+  font-size: 18px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================
+   USE THIS TOOL BUTTON
+========================================= */
+
+.use-tool-btn {
+  width: 100%;
+
+  height: 60px;
+
+  margin-top: auto;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #3975ca,
+      #527be0
+    );
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 17px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 3;
+
+  box-shadow:
+    0 9px 20px rgba(57, 117, 202, 0.20);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.use-tool-btn:hover {
+  transform: translateY(-3px);
+
+  filter: brightness(1.06);
+
+  box-shadow:
+    0 14px 28px rgba(57, 117, 202, 0.30);
+}
+
+.use-tool-btn:active {
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.tools-bottom-cta {
+  max-width: 1050px;
+
+  margin: 85px auto 0;
+
+  padding: 65px 30px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #edf4ff 0%,
+      #f5efff 50%,
+      #fff0f8 100%
+    );
+
+  border: 1px solid #dce4f2;
+
+  box-shadow:
+    0 20px 45px rgba(44, 66, 108, 0.08);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.tools-bottom-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  top: -130px;
+  left: -80px;
+
+  border-radius: 50%;
+
+  background: rgba(64, 108, 235, 0.10);
+}
+
+.tools-bottom-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  right: -110px;
+  bottom: -150px;
+
+  border-radius: 50%;
+
+  background: rgba(219, 57, 172, 0.10);
+}
+
+.tools-cta-icon {
+  color: #6652df;
+
+  font-size: 28px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.tools-bottom-cta h2 {
+  margin: 15px 0;
+
+  color: #14213a;
+
+  font-size: 39px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  position: relative;
+  z-index: 2;
+}
+
+.tools-bottom-cta h2 span {
+  color: #7047e2;
+}
+
+.tools-bottom-cta p {
+  margin: 0 auto 25px;
+
+  color: #64748d;
+
+  font-size: 16px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.tools-cta-button {
+  min-width: 200px;
+
+  height: 56px;
+
+  padding: 0 28px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #4b51ef,
+      #813fe7,
+      #df389c
+    );
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 3;
+
+  box-shadow:
+    0 12px 25px rgba(92, 65, 224, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tools-cta-button span {
+  margin-left: 9px;
+
+  font-size: 21px;
+}
+
+.tools-cta-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 32px rgba(92, 65, 224, 0.33);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .tools-page {
+    padding: 70px 25px 80px;
+  }
+
+  .tools-hero h1 {
+    font-size: 45px;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-card {
+    min-height: 470px;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .tools-page {
+    padding: 55px 16px 70px;
+  }
+
+  .tools-hero h1 {
+    font-size: 35px;
+  }
+
+  .tools-hero p {
+    font-size: 16px;
+  }
+
+  .tools-categories {
+    gap: 10px;
+  }
+
+  .tool-category {
+    min-width: auto;
+
+    height: 50px;
+
+    padding: 0 17px;
+
+    font-size: 14px;
+  }
+
+  .tool-card {
+    padding: 25px;
+
+    min-height: 0;
+  }
+
+  .tool-card-header {
+    gap: 15px;
+  }
+
+  .tool-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 26px;
+  }
+
+  .tool-card-title h2 {
+    font-size: 22px;
+  }
+
+  .tool-description {
+    margin-top: 28px;
+
+    font-size: 15px;
+  }
+
+  .tools-bottom-cta {
+    margin-top: 60px;
+
+    padding: 45px 20px;
+  }
+
+  .tools-bottom-cta h2 {
+    font-size: 30px;
+  }
+}

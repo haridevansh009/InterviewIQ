@@ -1,0 +1,1048 @@
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.how-it-works {
+  width: 100%;
+  min-height: 1000px;
+  padding: 70px 40px 90px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 55%,
+      rgba(72, 132, 255, 0.10),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 58%,
+      rgba(236, 72, 153, 0.10),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #ffffff 48%,
+      #fffaff 100%
+    );
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.how-it-works h2 {
+  margin: 0 0 70px;
+  padding: 0;
+
+  color: #3975ca;
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   MAIN WORKFLOW
+========================================================= */
+
+.workflow {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   WORKFLOW CARDS
+========================================================= */
+
+.workflow-card {
+  width: 620px;
+  min-height: 115px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 2px solid #cbdcf7;
+  border-radius: 18px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 22px 35px;
+
+  box-shadow:
+    0 12px 28px rgba(39, 74, 125, 0.08);
+
+  position: relative;
+  z-index: 2;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.workflow-card:not(.primary):hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 35px rgba(39, 74, 125, 0.14);
+}
+
+
+/* =========================================================
+   FIRST BLUE CARD
+========================================================= */
+
+.workflow-card.primary {
+  width: 560px;
+  min-height: 92px;
+
+  background: linear-gradient(
+    135deg,
+    #3975ca,
+    #526df1
+  );
+
+  border: none;
+  border-radius: 16px;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 15px 30px rgba(57, 117, 202, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.workflow-card.primary:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 22px 40px rgba(57, 117, 202, 0.30);
+}
+
+.workflow-card.primary .workflow-icon {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.workflow-card.primary span {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 18px;
+}
+
+
+/* =========================================================
+   WORKFLOW ICON
+========================================================= */
+
+.workflow-icon {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #edf3ff;
+
+  font-size: 27px;
+  color: #3975ca;
+}
+
+.workflow-icon.blue {
+  color: #3975ca;
+}
+
+
+/* =========================================================
+   WORKFLOW CONTENT
+========================================================= */
+
+.workflow-content {
+  text-align: left;
+  flex: 1;
+}
+
+.workflow-content h3 {
+  margin: 0 0 7px;
+
+  color: #142b4e;
+
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.workflow-content p {
+  margin: 0;
+
+  color: #627795;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   MAIN CONNECTING LINE
+========================================================= */
+
+.workflow-line {
+  width: 3px;
+  height: 48px;
+
+  background: linear-gradient(
+    180deg,
+    #3975ca,
+    #9bb8e8
+  );
+
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================================================
+   YES / NO BRANCH SECTION
+========================================================= */
+
+.workflow-branches {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 48px;
+
+  align-items: start;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   BRANCH
+========================================================= */
+
+.workflow-branch {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   YES / NO LABEL
+========================================================= */
+
+.branch-label {
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 0 0 10px;
+
+  padding: 0 22px;
+
+  border-radius: 30px;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  position: relative;
+  z-index: 3;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.branch-label span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   YES LABEL
+========================================================= */
+
+.yes-label {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #13c59a,
+    #20b985
+  );
+}
+
+.yes-label span {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   NO LABEL
+========================================================= */
+
+.no-label {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #f52c86,
+    #b53be8
+  );
+}
+
+.no-label span {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   BRANCH CONNECTING LINE
+========================================================= */
+
+.branch-line {
+  width: 3px;
+  height: 35px;
+
+  background: linear-gradient(
+    180deg,
+    #13c59a,
+    #38d5b0
+  );
+
+  margin: 0;
+
+  position: relative;
+}
+
+
+/* YES arrow */
+
+.yes-branch .branch-line::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  border-right: 3px solid #13c59a;
+  border-bottom: 3px solid #13c59a;
+
+  transform: translateX(-50%) rotate(45deg);
+}
+
+
+/* NO line */
+
+.no-branch .branch-line {
+  background: linear-gradient(
+    180deg,
+    #f52c86,
+    #d43ee8
+  );
+}
+
+
+/* NO arrow */
+
+.no-branch .branch-line::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  border-right: 3px solid #f52c86;
+  border-bottom: 3px solid #f52c86;
+
+  transform: translateX(-50%) rotate(45deg);
+}
+
+
+/* =========================================================
+   ANSWER CARDS
+========================================================= */
+
+.answer-card {
+  width: 100%;
+  min-height: 390px;
+
+  border-radius: 24px;
+
+  padding: 42px;
+
+  box-sizing: border-box;
+
+  text-align: left;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Decorative circle */
+
+.answer-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  top: -90px;
+  right: -65px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  pointer-events: none;
+}
+
+
+/* Bottom decorative circle */
+
+.answer-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  bottom: -100px;
+  left: -55px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.answer-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 25px 45px rgba(30, 55, 90, 0.18);
+}
+
+
+/* =========================================================
+   SAVED ANSWER - GREEN
+========================================================= */
+
+.saved-answer {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 255, 255, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #09b98b,
+      #13cda2
+    );
+
+  border: 1px solid rgba(0, 180, 140, 0.35);
+
+  box-shadow:
+    0 15px 30px rgba(8, 174, 132, 0.20);
+}
+
+
+/* =========================================================
+   BULLET ANSWER - PINK / PURPLE
+========================================================= */
+
+.bullet-answer {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 255, 255, 0.16),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f42b88,
+      #9f3ce8
+    );
+
+  border: 1px solid rgba(220, 50, 160, 0.30);
+
+  box-shadow:
+    0 15px 30px rgba(210, 52, 156, 0.20);
+}
+
+
+/* =========================================================
+   CARD ICON DECORATION
+========================================================= */
+
+.saved-answer h3::before {
+  content: "▤";
+
+  width: 58px;
+  height: 58px;
+
+  margin-right: 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  vertical-align: middle;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.20);
+
+  font-size: 27px;
+}
+
+.bullet-answer h3::before {
+  content: "✦";
+
+  width: 58px;
+  height: 58px;
+
+  margin-right: 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  vertical-align: middle;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.20);
+
+  font-size: 29px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.answer-card h3 {
+  margin: 0 0 15px;
+
+  color: #ffffff;
+
+  font-size: 31px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.answer-card > p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.94);
+
+  font-size: 20px;
+  line-height: 1.5;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   SAVED ANSWER PREVIEW
+========================================================= */
+
+.answer-preview {
+  width: 100%;
+
+  margin-top: 55px;
+
+  padding: 24px 27px;
+
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.17);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow:
+    inset 0 1px 10px rgba(255, 255, 255, 0.08);
+}
+
+.answer-preview em {
+  color: #ffffff;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+.answer-preview strong {
+  color: #ffffff;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   BULLET POINT PREVIEW
+========================================================= */
+
+.bullet-preview {
+  width: 100%;
+
+  margin-top: 45px;
+
+  padding: 23px 24px;
+
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  border-radius: 16px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow:
+    inset 0 1px 10px rgba(255, 255, 255, 0.08);
+}
+
+.bullet-preview div {
+  margin-bottom: 13px;
+}
+
+.bullet-preview div:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   BOTTOM SIGN UP CTA
+========================================================= */
+
+.how-it-works-signup {
+  width: 620px;
+  max-width: 90%;
+
+  min-height: 72px;
+
+  margin: 65px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #5646f5,
+      #8d38e8,
+      #ee2d8b
+    );
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 15px 30px rgba(104, 60, 226, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+}
+
+.how-it-works-signup::after {
+  content: "→";
+
+  margin-left: 14px;
+
+  font-size: 25px;
+
+  transition: transform 0.25s ease;
+}
+
+.how-it-works-signup:hover {
+  transform: translateY(-6px);
+
+  filter: brightness(1.05);
+
+  box-shadow:
+    0 22px 38px rgba(104, 60, 226, 0.32);
+}
+
+.how-it-works-signup:hover::after {
+  transform: translateX(5px);
+}
+
+.how-it-works-signup:active {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .how-it-works {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .workflow-branches {
+    gap: 30px;
+  }
+
+  .answer-card {
+    padding: 32px;
+  }
+
+  .answer-card h3 {
+    font-size: 27px;
+  }
+
+  .answer-card > p {
+    font-size: 18px;
+  }
+
+  .how-it-works-signup {
+    width: 560px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .how-it-works h2 {
+    font-size: 50px;
+  }
+
+  .workflow-card {
+    width: 580px;
+    max-width: 95%;
+  }
+
+  .workflow-card.primary {
+    width: 520px;
+    max-width: 90%;
+  }
+
+  .workflow-branches {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+
+  .answer-card {
+    min-height: 370px;
+    padding: 28px;
+  }
+
+  .answer-card h3 {
+    font-size: 24px;
+  }
+
+  .answer-card > p {
+    font-size: 17px;
+  }
+
+  .answer-preview,
+  .bullet-preview {
+    padding: 19px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .how-it-works {
+    min-height: auto;
+    padding: 60px 15px 70px;
+  }
+
+  .how-it-works h2 {
+    font-size: 42px;
+    margin-bottom: 55px;
+  }
+
+  .workflow {
+    max-width: 100%;
+  }
+
+  .workflow-card {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 105px;
+
+    padding: 20px;
+  }
+
+  .workflow-card.primary {
+    width: 95%;
+    min-height: 82px;
+  }
+
+  .workflow-card.primary span {
+    font-size: 20px;
+  }
+
+  .workflow-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 23px;
+  }
+
+  .workflow-content h3 {
+    font-size: 18px;
+  }
+
+  .workflow-content p {
+    font-size: 15px;
+  }
+
+  .workflow-branches {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .answer-card {
+    min-height: 350px;
+    padding: 27px;
+  }
+
+  .answer-card h3 {
+    font-size: 25px;
+  }
+
+  .answer-card > p {
+    font-size: 17px;
+  }
+
+  .answer-preview {
+    margin-top: 38px;
+  }
+
+  .bullet-preview {
+    margin-top: 30px;
+  }
+
+  .how-it-works-signup {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 65px;
+
+    margin-top: 50px;
+
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 450px
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .how-it-works {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .how-it-works h2 {
+    font-size: 35px;
+  }
+
+  .workflow-card.primary {
+    width: 100%;
+  }
+
+  .workflow-card.primary span {
+    font-size: 17px;
+  }
+
+  .workflow-content h3 {
+    font-size: 16px;
+  }
+
+  .workflow-content p {
+    font-size: 13px;
+  }
+
+  .workflow-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .branch-label {
+    font-size: 18px;
+    height: 44px;
+    padding: 0 18px;
+  }
+
+  .answer-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .answer-card h3 {
+    font-size: 22px;
+  }
+
+  .answer-card h3::before {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    font-size: 22px;
+  }
+
+  .answer-card > p {
+    font-size: 15px;
+  }
+
+  .answer-preview,
+  .bullet-preview {
+    padding: 17px;
+  }
+
+  .answer-preview em,
+  .answer-preview strong,
+  .bullet-preview {
+    font-size: 14px;
+  }
+
+  .how-it-works-signup {
+    font-size: 15px;
+  }
+
+  .how-it-works-signup::after {
+    font-size: 21px;
+    margin-left: 9px;
+  }
+}

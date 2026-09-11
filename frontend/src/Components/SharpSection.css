@@ -1,0 +1,666 @@
+/* =========================================
+   SHARP SECTION
+========================================= */
+
+.sharp-section {
+  width: 100%;
+  padding: 105px 40px 120px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 5% 20%,
+      rgba(76, 111, 255, 0.09),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 95% 65%,
+      rgba(220, 70, 255, 0.08),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #f7fbff 0%,
+      #ffffff 50%,
+      #fcf9ff 100%
+    );
+}
+
+.sharp-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.sharp-heading {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 90px;
+}
+
+.sharp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 18px;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(78, 92, 255, 0.10),
+    rgba(218, 63, 225, 0.10)
+  );
+
+  color: #5750df;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.sharp-heading h2 {
+  margin: 22px 0 15px;
+
+  color: #3775ca;
+
+  font-size: 58px;
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.sharp-heading h2 span {
+  background: linear-gradient(
+    90deg,
+    #3975ca,
+    #684df0,
+    #d23cbe
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sharp-heading p {
+  margin: 0;
+
+  color: #4c6280;
+
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.sharp-timeline {
+  position: relative;
+  width: 100%;
+}
+
+
+/* Center line */
+
+.sharp-center-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: 3px;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    180deg,
+    #b9d1f4,
+    #3975ca 25%,
+    #8060ed 55%,
+    #d04bbd 78%,
+    #79cda9
+  );
+
+  border-radius: 10px;
+}
+
+
+/* =========================================
+   TIMELINE ITEM
+========================================= */
+
+.sharp-item {
+  width: 100%;
+  min-height: 245px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  margin-bottom: 45px;
+}
+
+.sharp-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.sharp-card {
+  width: calc(50% - 75px);
+
+  min-height: 230px;
+
+  padding: 34px 40px;
+
+  box-sizing: border-box;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3eaf5;
+
+  box-shadow:
+    0 10px 30px rgba(38, 68, 110, 0.07);
+
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+
+  position: relative;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sharp-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(38, 68, 110, 0.13);
+}
+
+
+/* Left */
+
+.sharp-item.left .sharp-card {
+  margin-right: auto;
+}
+
+
+/* Right */
+
+.sharp-item.right .sharp-card {
+  margin-left: auto;
+}
+
+
+/* =========================================
+   CARD ICON
+========================================= */
+
+.sharp-card-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.sharp-card-content {
+  flex: 1;
+}
+
+.sharp-card h3 {
+  margin: 0 0 13px;
+
+  color: #10203d;
+
+  font-size: 23px;
+  line-height: 1.35;
+
+  font-weight: 800;
+}
+
+.sharp-card p {
+  margin: 0;
+
+  color: #536b8c;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.sharp-number {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 58px;
+  height: 58px;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  z-index: 5;
+
+  border: 3px solid;
+
+  box-shadow:
+    0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 8px 20px rgba(35, 70, 120, 0.12);
+}
+
+
+/* =========================================
+   LEFT / RIGHT CONNECTOR
+========================================= */
+
+.sharp-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  width: 75px;
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  background: #c7d7ed;
+}
+
+.sharp-item.left .sharp-card::after {
+  right: -75px;
+}
+
+.sharp-item.right .sharp-card::after {
+  left: -75px;
+}
+
+
+/* =========================================
+   BLUE
+========================================= */
+
+.sharp-card.blue {
+  border-color: #c7daf7;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(67, 121, 230, 0.10),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.sharp-card.blue .sharp-card-icon {
+  color: #3975ca;
+
+  background: linear-gradient(
+    135deg,
+    #e7efff,
+    #dbe8ff
+  );
+}
+
+.sharp-number.blue {
+  color: #3975ca;
+  border-color: #3975ca;
+}
+
+
+/* =========================================
+   PURPLE
+========================================= */
+
+.sharp-card.purple {
+  border-color: #d6c5ff;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(123, 76, 238, 0.11),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.sharp-card.purple .sharp-card-icon {
+  color: #7547df;
+
+  background: linear-gradient(
+    135deg,
+    #eee7ff,
+    #e6dcff
+  );
+}
+
+.sharp-number.purple {
+  color: #7547df;
+  border-color: #7547df;
+}
+
+
+/* =========================================
+   ORANGE
+========================================= */
+
+.sharp-card.orange {
+  border-color: #ffd09a;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 145, 38, 0.11),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.sharp-card.orange .sharp-card-icon {
+  color: #f47b20;
+
+  background: linear-gradient(
+    135deg,
+    #fff0dc,
+    #ffe6c4
+  );
+}
+
+.sharp-number.orange {
+  color: #f47b20;
+  border-color: #f47b20;
+}
+
+
+/* =========================================
+   PINK
+========================================= */
+
+.sharp-card.pink {
+  border-color: #ffc0df;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(236, 56, 151, 0.10),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.sharp-card.pink .sharp-card-icon {
+  color: #e93391;
+
+  background: linear-gradient(
+    135deg,
+    #ffe7f4,
+    #ffdced
+  );
+}
+
+.sharp-number.pink {
+  color: #e93391;
+  border-color: #e93391;
+}
+
+
+/* =========================================
+   GREEN
+========================================= */
+
+.sharp-card.green {
+  border-color: #a9e5d2;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(15, 180, 135, 0.10),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.sharp-card.green .sharp-card-icon {
+  color: #0ba77b;
+
+  background: linear-gradient(
+    135deg,
+    #def8ee,
+    #d3f2e6
+  );
+}
+
+.sharp-number.green {
+  color: #0ba77b;
+  border-color: #0ba77b;
+}
+
+
+/* =========================================
+   RESPONSIVE - 1000px
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .sharp-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .sharp-card {
+    width: calc(50% - 55px);
+    padding: 30px;
+  }
+
+  .sharp-card::after {
+    width: 55px;
+  }
+
+  .sharp-item.left .sharp-card::after {
+    right: -55px;
+  }
+
+  .sharp-item.right .sharp-card::after {
+    left: -55px;
+  }
+
+  .sharp-card h3 {
+    font-size: 20px;
+  }
+
+  .sharp-card p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - 750px
+========================================= */
+
+@media (max-width: 750px) {
+
+  .sharp-section {
+    padding: 70px 18px 80px;
+  }
+
+  .sharp-heading {
+    margin-bottom: 55px;
+  }
+
+  .sharp-heading h2 {
+    font-size: 40px;
+  }
+
+  .sharp-heading p {
+    font-size: 16px;
+  }
+
+  .sharp-center-line {
+    left: 28px;
+  }
+
+  .sharp-item {
+    min-height: auto;
+
+    margin-bottom: 35px;
+
+    padding-left: 70px;
+  }
+
+  .sharp-item.left .sharp-card,
+  .sharp-item.right .sharp-card {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .sharp-card {
+    min-height: auto;
+
+    padding: 27px;
+
+    gap: 16px;
+  }
+
+  .sharp-card::after {
+    display: none;
+  }
+
+  .sharp-number {
+    left: 28px;
+
+    width: 48px;
+    height: 48px;
+
+    font-size: 17px;
+  }
+
+  .sharp-card-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 23px;
+  }
+
+  .sharp-card h3 {
+    font-size: 19px;
+  }
+
+  .sharp-card p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - 500px
+========================================= */
+
+@media (max-width: 500px) {
+
+  .sharp-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .sharp-heading h2 {
+    font-size: 34px;
+  }
+
+  .sharp-badge {
+    font-size: 11px;
+  }
+
+  .sharp-center-line {
+    left: 22px;
+  }
+
+  .sharp-item {
+    padding-left: 53px;
+  }
+
+  .sharp-number {
+    left: 22px;
+
+    width: 42px;
+    height: 42px;
+
+    box-shadow:
+      0 0 0 5px rgba(255, 255, 255, 0.85),
+      0 6px 15px rgba(35, 70, 120, 0.12);
+  }
+
+  .sharp-card {
+    padding: 22px;
+
+    border-radius: 17px;
+
+    display: block;
+  }
+
+  .sharp-card-icon {
+    margin-bottom: 16px;
+  }
+
+  .sharp-card h3 {
+    font-size: 18px;
+  }
+
+  .sharp-card p {
+    font-size: 14px;
+  }
+}

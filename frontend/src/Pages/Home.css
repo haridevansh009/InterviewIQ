@@ -1,0 +1,42 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+  .home-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .home-page {
+    width: 100%;
+    min-width: 0;
+  }
+}
