@@ -69,7 +69,7 @@ function App() {
     // Study Material
     if (path === "/study-material") {
       return <StudyMaterial />;
-    }
+    }  
 
     return <Home />;
   };
